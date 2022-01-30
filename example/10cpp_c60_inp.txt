@@ -1,0 +1,5 @@
+%nprocshared=8
+%mem=10GB
+%chk=
+#p rb3lyp/6-31g(d) counterpoise=2
+0 1 0 1 0 1
