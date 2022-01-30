@@ -21,7 +21,7 @@ elif osVer == 'Windows':
 else:
 	print(f"*     ====================== Version {proVer} for Linux ======================     *")
 
-print(f"                          Release date: {rlsDate}                           *")
+print(f"*                          Release date: {rlsDate}                           *")
 print("*                                                                             *")
 print("*                             -- Catch me with --                             *")
 print("*                         E-mail  wongzit@yahoo.co.jp                         *")
