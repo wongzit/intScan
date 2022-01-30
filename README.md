@@ -60,4 +60,31 @@ int.Scan input file (.txt):
 /Users/wangzhe/Desktop/10cpp_c60/10cpp_c60.txt
 ```
 
-### 3. Extracting energies with int.Scan(enex)
+## Comments
+
+### About BSSE
+If BSSE (`counter=2` or `counterpoise=2`) is included in file (2), the fragment data will also be included in the generated Gaussian input files.
+**With BSSE:**
+```
+H(Fragment=1)                 -4.944644    -4.906682    -2.289024
+H(Fragment=1)                 -2.877416    -6.172317    -2.064427
+H(Fragment=1)                 -3.265775    -6.050711    2.206495
+C(Fragment=2)                 -1.80485887    3.02852116    4.28662042
+C(Fragment=2)                 -1.88434133    2.51907695    5.64214841
+C(Fragment=2)                 -0.74835384    2.47866864    6.4353001
+```
+**Without BSSE:**
+```
+H                 -4.944644    -4.906682    -2.289024
+H                 -2.877416    -6.172317    -2.064427
+H                 -3.265775    -6.050711    2.206495
+C                 -1.80485887    3.02852116    4.28662042
+C                 -1.88434133    2.51907695    5.64214841
+C                 -0.74835384    2.47866864    6.4353001
+```
+
+### About Bq atom
+If Bq atoms are included in file (1), the generated Gaussian input files would delete these Bq atoms, but Bq atoms would be remain in the generated *.xyz* file.
+
+### Extracting Energy from Gaussian output files
+For single point energy calculations, users can use int.Scan(enex) script to extracting electronic energies in each step. The source code could be found in this repo.
