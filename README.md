@@ -62,10 +62,14 @@ int.Scan input file (.txt):
 /Users/wangzhe/Desktop/10cpp_c60/10cpp_c60.txt
 ```
 
+The trajectory of **C60** in **[10]CPP**:
+![](./c60_in_cpp.gif)
+
 ## Comments
 
 ### About BSSE
 If BSSE (`counter=2` or `counterpoise=2`) is included in file (2), the fragment data will also be included in the generated Gaussian input files.
+
 **With BSSE:**
 ```
 H(Fragment=1)                 -4.944644    -4.906682    -2.289024
