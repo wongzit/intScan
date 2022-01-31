@@ -1,4 +1,6 @@
-# int.Scan
+# int.Scan v1.0
+
+Python code kit for generating input files of intermolecular rigid scan calculations.
 
 ## Usage
 
@@ -88,3 +90,7 @@ If Bq atoms are included in file (1), the generated Gaussian input files would d
 
 ### Extracting Energy from Gaussian output files
 For single point energy calculations, users can use int.Scan(enex) script to extracting electronic energies in each step. The source code could be found in this repo.
+
+### Check termination information
+Users can use int.Scan(chkend) to check whether the calculations were terminated normally.
+
